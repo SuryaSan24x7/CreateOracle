@@ -1,0 +1,31 @@
+{
+  "name": "oracle",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000r\u0000e\u0000a\u0000t\u0000e\u0000O\u0000r\u0000a\u0000c\u0000l\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:oracle": "cd oracle && npx truffle migrate --network extdev --reset -all && cd ..",
+    "deploy:caller": "cd caller && npx truffle migrate --network extdev --reset -all && cd ..",
+    "deploy:all": "npm run deploy:oracle && npm run deploy:caller"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuryaSan24x7/CreateOracle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuryaSan24x7/CreateOracle/issues"
+  },
+  "homepage": "https://github.com/SuryaSan24x7/CreateOracle#readme",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "bn.js": "^5.2.1",
+    "loom-js": "^1.90.0",
+    "loom-truffle-provider": "^0.13.0",
+    "openzeppelin-solidity": "^3.4.2",
+    "truffle": "^5.11.5"
+  }
+}
